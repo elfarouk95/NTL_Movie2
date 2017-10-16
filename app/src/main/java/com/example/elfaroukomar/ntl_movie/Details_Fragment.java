@@ -129,7 +129,7 @@ public class Details_Fragment extends Fragment {
         Picasso.with(getActivity().getApplication().getApplicationContext()).load("http://image.tmdb.org/t/p/w1000"+item.backdrop_path).into(backposter);
         ((TextView)v.findViewById(R.id.orginaltitle)).setText(item.getOriginal_title());
         ((TextView)v.findViewById(R.id.overview)).setText(item.getOverview());
-
+        ((TextView)v.findViewById(R.id.relasedate)).setText(item.getRelease_date());
         LikeBTn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
